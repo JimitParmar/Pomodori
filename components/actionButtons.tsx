@@ -35,7 +35,7 @@ export function AddTask() {
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
-              Alloted Time <span className="text-[0.5rem]">Hours-Minutes-Seconds</span>
+              Alloted Time
             </Label>
             <AddTime/>
           </div>
@@ -56,39 +56,3 @@ export function AddTask() {
   )
 }
 
-export function AddBreak() {
-    return (
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button className="bg-white text-slate-500 p-6 border border-dashed  border-slate-400 transition-all ease-in-out delay-75 hover:bg-slate-300 hover:border-slate-300 hover:text-slate-600 rounded-2xl" >Add Break</Button>
-        </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Add Break</SheetTitle>
-            <SheetDescription>
-              Taking Break is important, make sure you take enough time off.
-            </SheetDescription>
-          </SheetHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="name" className="text-right">
-                Title
-              </Label>
-              <Input id="name" placeholder="Automate Testing" className="col-span-3" />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="username" className="text-right">
-                Notes
-              </Label>
-              <Input id="username" placeholder="Update testing plugins" className="col-span-3" />
-            </div>
-          </div>
-          <SheetFooter>
-            <SheetClose asChild>
-              <Button type="submit" className="bg-white text-black border  border-slate-400 transition-all ease-in-out delay-75 hover:bg-indigo-600 hover:border-indigo-600 hover:text-white rounded-xl">Add Task</Button>
-            </SheetClose>
-          </SheetFooter>
-        </SheetContent>
-      </Sheet>
-    )
-  }

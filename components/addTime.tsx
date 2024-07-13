@@ -9,18 +9,18 @@ import {
     return (
       <InputOTP maxLength={6}>
         <InputOTPGroup>
-          <InputOTPSlot placeholder = 'h' index={0} />
-          <InputOTPSlot placeholder = 'h' index={1} />
+          <InputOTPSlot  index={0} />
+          <InputOTPSlot  index={1} />
         </InputOTPGroup>
         <InputOTPSeparator />
         <InputOTPGroup>
-        <InputOTPSlot placeholder = 'm' index={2} />
-        <InputOTPSlot placeholder = 'm' index={3} />
+        <InputOTPSlot  index={2} />
+        <InputOTPSlot  index={3} />
         </InputOTPGroup>
         <InputOTPSeparator />
         <InputOTPGroup>
-          <InputOTPSlot placeholder = 's' index={4} />
-          <InputOTPSlot placeholder = 's' index={5} />
+          <InputOTPSlot  index={4} />
+          <InputOTPSlot  index={5} />
         </InputOTPGroup>
       </InputOTP>
     )

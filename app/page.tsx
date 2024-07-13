@@ -1,4 +1,5 @@
-import { AddBreak, AddTask } from "@/components/addTask";
+import { AddTask } from "@/components/actionButtons";
+import { TakeBreak } from "@/components/takeBreak";
 import { MainClock } from "@/components/clock";
 import { Play, Next, Repeat } from "@/components/icons";
 import Image from "next/image";
@@ -12,11 +13,11 @@ export default function Home() {
       {/* Major Stats */}
       <div className="w-72 mx-auto flex p-2 justify-center gap-8 mt-4 bg-slate-200 rounded-lg">
         <div className="flex justify-center gap-3">
-          <div className="text-3xl font-bold">4.6</div>
+          <div className="text-3xl font-semibold">4.6</div>
           <div className="text-xs pt-0.5">Estimated<br/>Time(h)</div>
         </div>
         <div className="flex justify-center gap-3">
-          <div className="text-3xl font-bold">8</div>
+          <div className="text-3xl font-semibold">8</div>
           <div className="text-xs pt-0.5">Total<br/>Tasks</div>
         </div>
       </div>
@@ -39,7 +40,7 @@ export default function Home() {
       <div className="w-40 mx-auto flex p-3 justify-center gap-8 mt-12">
         <div className="flex justify-center gap-6 font-medium ">
           <AddTask/>
-          <AddBreak/>
+          <TakeBreak/>
         </div>
       </div>
      
