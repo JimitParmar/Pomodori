@@ -20,6 +20,7 @@ export function TakeBreak() {
   function onClick(adjustment: number) {
     setGoal(Math.max(0, Math.min(120, goal + adjustment)))
   }
+  const buttonText = goal > 60 ? "You are a Dissapointment!" : goal > 30 ? "Are you kidding me?" : "Seriously?";
 
   return (
     <Drawer>
@@ -79,8 +80,8 @@ export function TakeBreak() {
               </ResponsiveContainer>
             </div> */}
           </div>
-          <DrawerFooter>
-            <Button disabled={goal == 0} className="bg-indigo-500">Seriously?</Button>
+          <DrawerFooter className="py-10">
+            <Button disabled={goal == 0} className="bg-indigo-500 hover:bg-indigo-700">{buttonText}</Button>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>
