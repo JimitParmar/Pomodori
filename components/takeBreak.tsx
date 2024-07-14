@@ -25,7 +25,7 @@ export function TakeBreak() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button className="bg-white text-black p-6 border border-dashed border-slate-400 transition-all ease-in-out delay-75 hover:bg-slate-300 hover:border-slate-300 hover:text-gray-800 rounded-2xl">Take Break</Button>
+        <Button className="bg-white text-black p-6 border border-dashed border-slate-400 transition-all ease-in-out  hover:bg-slate-300 hover:border-slate-300 hover:text-gray-800 rounded-2xl">Take Break</Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
