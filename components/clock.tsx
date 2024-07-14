@@ -12,7 +12,7 @@ const Children: React.FC<{ remainingTime: TimeRemaining }> = ({ remainingTime })
     return <>{`${minutes}:${seconds}`}</>;
 }
 
-interface PomodoroClockProps {
+interface PomodoroClockProps {  
     duration: number;
     isPlaying?: boolean;
     key: number
